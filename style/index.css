@@ -1,0 +1,26 @@
+:root{
+    --block-width: 70px;
+    --block-height: 70px;
+    --circle: 50px;
+    --distance: 10px;
+}
+
+#container{
+    margin: 10px;
+    padding: var(--distance) 0 0 var(--distance);
+
+    width: calc(var(--block-width)*7+var(--distance)*7);
+    min-height: 100px; 
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block{
+    margin: 0 var(--distance) var(--distance) 0;
+    border-radius: var(--circle);
+
+    width: var(--block-width);
+    height: var(--block-height);
+    background-color: pink;
+}
